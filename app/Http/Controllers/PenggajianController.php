@@ -338,12 +338,11 @@ class PenggajianController extends Controller
             'Terima kasih.';
 
 
-        $response =
-            Http::withHeaders([
-                'Authorization' =>
-                    env('FONNTE_TOKEN'),
-            ])
-            ->post(
+$response = Http::withoutVerifying()
+    ->withHeaders([
+        'Authorization' => env('FONNTE_TOKEN'),
+    ])
+    ->post(
                 'https://api.fonnte.com/send',
                 [
                     'target' =>
