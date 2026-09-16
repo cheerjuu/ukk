@@ -95,7 +95,7 @@
         ========================= */
 
         .sidebar .btn-logout {
-            color: #dce6f0 !important;
+            color: #fa3e3e !important;
 
             text-decoration: none;
 
